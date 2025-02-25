@@ -1,42 +1,64 @@
-\documentclass[12pt]{article}
-\usepackage{lingmacros}
-\usepackage{tree-dvips}
+\documentclass{report}
+\usepackage{lipsum} % For sample text
+\usepackage{hyperref} % For hyperlinks in the document
+
+\title{Technical Report Title}
+\author{Your Name}
+\date{\today}
+
 \begin{document}
 
-\section*{Notes for My Paper}
+\maketitle
 
-Don't forget to include examples of topicalization
-They look like this: 
+\tableofcontents
+\newpage
 
-{\small
-\enumsentence{Topicalization from sentential subject:\\ 
-\shortex{7}{a John$_i$ [a & kltukl & [el & 
-  {\bf l-}oltoir & er & ngii$_i$ & a Mary]]}
-{ & {\bf R-}clear & {\sc comp} & 
-  {\bf IR}.{\sc 3s}-love   & P & him & }
-{John, (it's) clear that Mary loves (him).}}
-}
+\chapter{Description of Project}
+\section{Project Idea}
+\lipsum[1-2]
 
-\subsection*{How to handle topicalization}
+\chapter{Likely Marketing Efforts}
+\section{Target Audience}
+\lipsum[3]
+\section{Cost Expectations}
+\lipsum[4]
 
-I'll just assume a tree structure like (\ex{1}).
+\chapter{Technical Details / Technical Research}
+\lipsum[5-6]
 
+\chapter{Defined Goals}
+\section{Expected Outcomes}
+\lipsum[7]
+\section{Minimum Viable Product (MVP)}
+\lipsum[8]
 
-\subsection*{Mood}
+\chapter{Testing to be Performed}
+\section{Test Suite}
+\lipsum[9]
 
-Mood changes when there is a topic, as well as when
-there is WH-movement.  \emph{Irrealis} is the mood when
-there is a non-subject topic or WH-phrase in Comp.
-\emph{Realis} is the mood when there is a subject topic
-or WH-phrase.
+\chapter{Summary of Proposal}
+\lipsum[10]
 
-\subsection*{SupaHot}
+\chapter{Timeline and Budget}
+\section{Timeline}
+\lipsum[11]
+\section{Budget Estimates}
+\begin{tabular}{|l|c|}
+\hline
+Item & Cost \\
+\hline
+Hardware & \$1000 \\
+Software & \$500 \\
+Licensing & \$200 \\
+Human Resources & \$3000 \\
+\hline
+Total & \$4700 \\
+\hline
+\end{tabular}
 
-Boom Pow Bada Bop Boop Bam
-
-Bing bop 
-
-Our brains are so big. Our brains cannot be measured with conventional methods.
-Our brains are so large that you have to contact NASA.
+\begin{thebibliography}{9}
+\bibitem{ref1} Author, \textit{Title}, Journal, Year.
+\bibitem{ref2} Author, \textit{Title}, Journal, Year.
+\end{thebibliography}
 
 \end{document}
