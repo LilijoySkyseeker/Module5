@@ -1,7 +1,7 @@
 # Notes 
 ## Lily
 - frigate, the main software https://github.com/blakeblackshear/frigate
-
+## Tasks
 - Subscribtions? How much per month/year? Tier package? One time sale?
 
 - Marketing? Peace of mind the data is yours and doesnt leave LAN
