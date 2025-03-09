@@ -163,39 +163,77 @@ The monetization is through a hardware and install fee, and a monthly subscripti
 \hline
 \textbf{Requirements} & \textbf{Test Case} & \textbf{Test Result} & \textbf{Defect/Error}\\
 \hline
-\textbf{Hardware} &  &  &  \\
+\textbf{Hardware Setup} &  &  &  \\
 \hline
-Assemble Pie box & Verify all components are present &  &  \\
+Gather all required components & Verify all components are present &  &  \\
 \hline
- & Attach Raspberry Pi to the case &  &  \\
+Insert the microSD card into the Raspberry Pi & Verify microSD card is inserted &  &  \\
 \hline
- & Attach Coral Accelerator to the Pi &  &  \\
+Connect the Raspberry Pi to a monitor, keyboard, and mouse & Verify connections &  &  \\
 \hline
- & Secure the POE switch in the case &  &  \\
+Power on the Raspberry Pi & Complete initial setup wizard &  &  \\
 \hline
-Connect POE switch to power & Verify power adapter is connected &  &  \\
+\textbf{Raspberry Pi OS Configuration} &  &  &  \\
 \hline
- & Verify POE switch is powered on &  &  \\
+Download Raspberry Pi Imager & Verify download &  &  \\
 \hline
-Connect Pie to power & Verify power adapter is connected &  &  \\
+Flash Raspberry Pi OS to the microSD card & Verify flashing process &  &  \\
 \hline
- & Verify Raspberry Pi is powered on &  &  \\
+Enable SSH access via raspi-config & Verify SSH access &  &  \\
 \hline
-Connect Pie to switch & Connect Ethernet cable from Pi to switch &  &  \\
+Connect the Raspberry Pi to Wi-Fi or Ethernet & Verify network connection &  &  \\
 \hline
- & Verify network connection on Pi &  &  \\
+Update the Raspberry Pi OS & Verify OS update &  &  \\
 \hline
-Close enclosure & Verify all components are secured &  &  \\
+\textbf{Frigate Installation} &  &  &  \\
 \hline
- & Close and lock the enclosure &  &  \\
+Install Docker on the Raspberry Pi & Verify Docker installation &  &  \\
 \hline
-Connect cameras to switch & Connect Ethernet cables from cameras to switch &  &  \\
+Pull the Frigate Docker image & Verify Docker image pull &  &  \\
 \hline
- & Verify cameras are powered on &  &  \\
+Create a directory for Frigate configuration files & Verify directory creation &  &  \\
 \hline
-Check that cameras are powered & Verify camera LEDs are on &  &  \\
+Create and configure the config.yml file & Verify config.yml file &  &  \\
 \hline
-\textbf{Software} &  &  &  \\
+Add camera details to the config.yml file & Verify camera details &  &  \\
+\hline
+Run the Frigate Docker container & Verify Docker container running &  &  \\
+\hline
+\textbf{Camera Setup} &  &  &  \\
+\hline
+Physically connect 4 cameras to the Raspberry Pi & Verify camera connections &  &  \\
+\hline
+Verify each camera is recognized by the Raspberry Pi & Verify camera recognition &  &  \\
+\hline
+\textbf{Testing and Optimization} &  &  &  \\
+\hline
+Access the Frigate web interface & Verify web interface access &  &  \\
+\hline
+Verify live feeds from all 4 cameras & Verify live feeds &  &  \\
+\hline
+Test motion detection and recording & Verify motion detection &  &  \\
+\hline
+Adjust Frigate settings for optimal performance & Verify settings adjustment &  &  \\
+\hline
+Restart the Frigate Docker container & Verify container restart &  &  \\
+\hline
+Verify system performance after optimization & Verify system performance &  &  \\
+\hline
+\textbf{Security and Documentation} &  &  &  \\
+\hline
+Change default passwords & Verify password change &  &  \\
+\hline
+Enable a firewall and restrict SSH access & Verify firewall and SSH settings &  &  \\
+\hline
+Test SSH access with the new password & Verify SSH access &  &  \\
+\hline
+Document the setup process & Verify documentation &  &  \\
+\hline
+Review the documentation for accuracy & Verify documentation accuracy &  &  \\
+\hline
+Perform a final system test & Verify final system test &  &  \\
+\hline
+Create a backup of the microSD card & Verify backup creation &  &  \\
 \hline
 Install preconfigured OS using flashdrive & Insert flashdrive into Pi &  &  \\
 \hline
