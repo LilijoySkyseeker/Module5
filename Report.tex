@@ -1,6 +1,7 @@
 \documentclass{report}
 \usepackage{hyperref} % For hyperlinks in the document
 \usepackage{longtable} % For tables that span multiple pages
+\usepackage{graphicx} % For including graphics
 % chktex-file 44
 % chktex-file 38
 % chktex-file 8
@@ -333,9 +334,10 @@ General insurance cost & \$3,000 \\
 Total & \$3,732,695 \\
 \hline
 \end{tabular}
-\begin{figure}
-    \includegraphics{width=\linewidth}{pi_chart.png}
+\begin{figure}[h]
+    \includegraphics[width=\linewidth]{pi_chart.png}
     \caption{Costs broken down}
+\end{figure}
 \end{document}
 
 \begin{thebibliography}{9}
