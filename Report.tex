@@ -157,39 +157,64 @@ The package to the user will be home base station that has a POE switch, and var
 The storage for the system will be through AWS and the there will be a web interface to access the recorded feeds. 
 The monetization is through a hardware and install fee, and a monthly subscription fee for the AWS storage and web interface. 
 
-
 \chapter{Testing to be Performed}
-\begin{tabular}{|l|l|l|l|}
+\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
 \hline
 \textbf{Requirements} & \textbf{Test Case} & \textbf{Test Result} & \textbf{Defect/Error}\\
 \hline
 \textbf{Hardware} &  &  &  \\
 \hline
-Assemble Pie box &  &  &  \\
+Assemble Pie box & Verify all components are present &  &  \\
 \hline
-Connect POE switch to power &  &  &  \\
+ & Attach Raspberry Pi to the case &  &  \\
 \hline
-Connect Pie to to power &  &  &  \\
+ & Attach Coral Accelerator to the Pi &  &  \\
 \hline
-Connect Pie to switch &  &  &  \\
+ & Secure the POE switch in the case &  &  \\
 \hline
-Close enclosure &  &  &  \\
+Connect POE switch to power & Verify power adapter is connected &  &  \\
 \hline
-Connect cameras to switch &  &  &  \\
+ & Verify POE switch is powered on &  &  \\
 \hline
-Check that cameras are powered &  &  &  \\
+Connect Pie to power & Verify power adapter is connected &  &  \\
+\hline
+ & Verify Raspberry Pi is powered on &  &  \\
+\hline
+Connect Pie to switch & Connect Ethernet cable from Pi to switch &  &  \\
+\hline
+ & Verify network connection on Pi &  &  \\
+\hline
+Close enclosure & Verify all components are secured &  &  \\
+\hline
+ & Close and lock the enclosure &  &  \\
+\hline
+Connect cameras to switch & Connect Ethernet cables from cameras to switch &  &  \\
+\hline
+ & Verify cameras are powered on &  &  \\
+\hline
+Check that cameras are powered & Verify camera LEDs are on &  &  \\
 \hline
 \textbf{Software} &  &  &  \\
 \hline
-Install preconfigured OS using flashdrive &  &  &  \\
+Install preconfigured OS using flashdrive & Insert flashdrive into Pi &  &  \\
 \hline
-Check that Frigate is running &  &  &  \\
+ & Boot Raspberry Pi &  &  \\
 \hline
-Check that Rclone is running &  &  &  \\
+ & Verify OS installation &  &  \\
 \hline
-Check that the bucket is mounted and viewable &  &  &  \\
+Check that Frigate is running & Verify Frigate service is active &  &  \\
 \hline
-Check that the web interface is viewable &  &  &  \\
+Check that Rclone is running & Verify Rclone service is active &  &  \\
+\hline
+ & Verify Rclone configuration &  &  \\
+\hline
+Check that the bucket is mounted and viewable & Verify AWS S3 bucket is mounted &  &  \\
+\hline
+ & Access files in the mounted bucket &  &  \\
+\hline
+Check that the web interface is viewable & Access the web interface URL &  &  \\
+\hline
+ & Verify live camera feeds are displayed &  &  \\
 \hline
 \end{tabular}
 
