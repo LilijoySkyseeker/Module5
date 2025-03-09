@@ -1,11 +1,12 @@
 \documentclass{report}
 \usepackage{hyperref} % For hyperlinks in the document
+\usepackage{longtable} % For tables that span multiple pages
 % chktex-file 44
 % chktex-file 38
 % chktex-file 8
 
-\title{Home Security System Proposal}
-\author{Your Name}
+\title{Project 4: Home Security System Proposal}
+\author{Logan williamson, Casey Curran, Lily Danforth, Tre Thacker, \\ Julissa Ramirez, Michael Bergman \\ Team 7}
 \date{\today}
 
 \begin{document}
@@ -156,52 +157,67 @@ The end product is a home security system and hardware solution that we offer in
 The package to the user will be home base station that has a POE switch, and varying IP cameras to connect to it. 
 The storage for the system will be through AWS and the there will be a web interface to access the recorded feeds. 
 The monetization is through a hardware and install fee, and a monthly subscription fee for the AWS storage and web interface. 
+
 \chapter{Testing to be Performed}
-\begin{tabular}{|l|l|l|l|}
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
 \hline
-Requirement & Test Case & Test Result & Defect/Error \\
+\textbf{Requirements} & \textbf{Test Case} & \textbf{Test Result} & \textbf{Defect/Error}\\
 \hline
-Req 1 & Test Case 1 &  &  \\
+\textbf{Hardware} &  &  &  \\
 \hline
-Req 2 & Test Case 2 &  &  \\
+Assemble Pie box & Verify all components are present &  &  \\
 \hline
-Req 3 & Test Case 3 &  &  \\
+ & Attach Raspberry Pi to the case &  &  \\
 \hline
-Req 4 & Test Case 4 &  &  \\
+ & Attach Coral Accelerator to the Pi &  &  \\
 \hline
-Req 5 & Test Case 5 &  &  \\
+ & Secure the POE switch in the case &  &  \\
 \hline
-Req 6 & Test Case 6 &  &  \\
+Connect POE switch to power & Verify power adapter is connected &  &  \\
 \hline
-Req 7 & Test Case 7 &  &  \\
+ & Verify POE switch is powered on &  &  \\
 \hline
-Req 8 & Test Case 8 &  &  \\
+Connect Pie to power & Verify power adapter is connected &  &  \\
 \hline
-Req 9 & Test Case 9 &  &  \\
+ & Verify Raspberry Pi is powered on &  &  \\
 \hline
-Req 10 & Test Case 10 &  &  \\
+Connect Pie to switch & Connect Ethernet cable from Pi to switch &  &  \\
 \hline
-Req 11 & Test Case 11 &  &  \\
+ & Verify network connection on Pi &  &  \\
 \hline
-Req 12 & Test Case 12 &  &  \\
+Close enclosure & Verify all components are secured &  &  \\
 \hline
-Req 13 & Test Case 13 &  &  \\
+ & Close and lock the enclosure &  &  \\
 \hline
-Req 14 & Test Case 14 &  &  \\
+Connect cameras to switch & Connect Ethernet cables from cameras to switch &  &  \\
 \hline
-Req 15 & Test Case 15 &  &  \\
+ & Verify cameras are powered on &  &  \\
 \hline
-Req 16 & Test Case 16 &  &  \\
+Check that cameras are powered & Verify camera LEDs are on &  &  \\
 \hline
-Req 17 & Test Case 17 &  &  \\
+\textbf{Software} &  &  &  \\
 \hline
-Req 18 & Test Case 18 &  &  \\
+Install preconfigured OS using flashdrive & Insert flashdrive into Pi &  &  \\
 \hline
-Req 19 & Test Case 19 &  &  \\
+ & Boot Raspberry Pi &  &  \\
 \hline
-Req 20 & Test Case 20 &  &  \\
+ & Verify OS installation &  &  \\
 \hline
-\end{tabular}
+Check that Frigate is running & Verify Frigate service is active &  &  \\
+\hline
+Check that Rclone is running & Verify Rclone service is active &  &  \\
+\hline
+ & Verify Rclone configuration &  &  \\
+\hline
+Check that the bucket is mounted and viewable & Verify AWS S3 bucket is mounted &  &  \\
+\hline
+ & Access files in the mounted bucket &  &  \\
+\hline
+Check that the web interface is viewable & Access the web interface URL &  &  \\
+\hline
+ & Verify live camera feeds are displayed &  &  \\
+\hline
+\end{longtable}
 
 \chapter{Summary of Proposal}
 Many homeowners would love to have security for their house.
@@ -237,9 +253,16 @@ Home Improvement Contractor license. \$1095.
 
 Human Resources requires one person, making 60k annually. 
 
-Developer labor cost is determined by the teams total salaries combined, divided by how long they are needed ().
+Developer labor cost is determined by the teams total salaries combined, including scrum master, and head of department.
 
-Installer labor is determined by the installers salaries times amount of installers.
+Installer labor is determined by the installers salaries times amount of installers, with a salary of \$62,000 in VA.
+
+Systems team labor includes the system team's total salaries
+Help desk labor covers help desk personnel for the year. 
+Benefits are calculated by \$15,000 per year per employee.
+Vehicle costs are sorted into upfront (cost of vehicle purchase), and annual, 
+including gas, 60 cents a mile, maintenance 40 cents a mile, 
+and \$6,000 a year for full insurance for 3 vans.
 
 \begin{tabular}{|l|c|}
 \hline
@@ -255,18 +278,21 @@ Licensing & \$1795 \\
 \hline
 Human Resources & \$60,000 for the year. \\
 \hline
-Developer Labor & \$ for the project. \\
+Developer Labor & \$860,000 for the project. \\
 \hline
-Installer Labor & \$ for the year \\
+Installer Labor & \$186,000 for the project \\
 \hline
-Help Desk Labor & \$ for the year \\
+Systems team & \$350,000 for the year \\
 \hline
-Benefits & \$ for employees
+Help Desk Labor & \$90,000 for the year \\
 \hline
-Vehicle cost & \$165,900 upfront, \$15,900 annually after year 1.
+Benefits & \$270,000 for employees. \\
 \hline
-Insurance cost & \$
-Total & \$ \\
+Vehicle cost & \$165,900 upfront, \$15,900 annually after year 1. \\
+\hline
+General insurance cost & \$3,000 \\
+\hline
+Total & \$3,732,695 \\
 
 \hline
 \end{tabular}
