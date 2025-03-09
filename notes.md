@@ -9,7 +9,7 @@
 - Techs? Managers? Vehicles? Wages?
 
 - Testing?
-
+ 
 - How much money do we need for how long?
 
 - Pricing?
