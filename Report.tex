@@ -1,5 +1,6 @@
 \documentclass{report}
 \usepackage{hyperref} % For hyperlinks in the document
+\usepackage{longtable} % For tables that span multiple pages
 % chktex-file 44
 % chktex-file 38
 % chktex-file 8
@@ -158,7 +159,7 @@ The storage for the system will be through AWS and the there will be a web inter
 The monetization is through a hardware and install fee, and a monthly subscription fee for the AWS storage and web interface. 
 
 \chapter{Testing to be Performed}
-\begin{tabular}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\begin{longtable}{|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
 \hline
 \textbf{Requirements} & \textbf{Test Case} & \textbf{Test Result} & \textbf{Defect/Error}\\
 \hline
@@ -216,7 +217,7 @@ Check that the web interface is viewable & Access the web interface URL &  &  \\
 \hline
  & Verify live camera feeds are displayed &  &  \\
 \hline
-\end{tabular}
+\end{longtable}
 
 \chapter{Summary of Proposal}
 Many homeowners would love to have security for their house.
